@@ -15,7 +15,7 @@
 	<RepositoryUrl>https://github.com/mhb164/ServiceSimulator</RepositoryUrl>
 	<PackageProjectUrl>https://github.com/mhb164/ServiceSimulator</PackageProjectUrl>
 	<PackageReadmeFile>README.md</PackageReadmeFile>
-	<PackageLicenseFile>LICENSE</PackageLicenseFile>
+	<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
 	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	<PackageId>ServiceSimulator</PackageId>
 	<PackageTags>ServiceSimulator</PackageTags>
@@ -30,4 +30,8 @@
 	<PackageReference Include="Microsoft.Extensions.Options" Version="9.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+  	<None Include="..\README.md" Pack="true" PackagePath="\" />
+  	<None Include="..\LICENSE.txt" Pack="true" PackagePath="\" />
+  </ItemGroup>
 </Project>
